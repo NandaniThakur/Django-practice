@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website with componnets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Include Header Component -->
+{% block header %}
+{% include 'header.html' %}
+{% endblock %}
+
+<!-- Include Navbar Component -->
+{% block Navbar %}
+{% include 'navbar.html' %}
+{% endblock %}
+
+<!-- Include Content Component -->
+{% block Content %}
+{% include 'content.html' %}
+{% endblock %}
+
+
+
+
+{% block page_content %}
+
+{% endblock %}
+
+
+
+<!-- Include Footer Component -->
+{% block Footer %}
+{% include 'footer.html' %}
+{% endblock %}
+
+</body>
+</html>
